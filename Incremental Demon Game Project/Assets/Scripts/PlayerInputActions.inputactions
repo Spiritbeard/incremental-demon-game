@@ -1,0 +1,45 @@
+{
+    "name": "Player Input Actions",
+    "maps": [
+        {
+            "name": "Navigate Default UI",
+            "id": "d51ea264-0db1-452f-bbc7-b359fcb85727",
+            "actions": [
+                {
+                    "name": "ButtonPress",
+                    "type": "PassThrough",
+                    "id": "15af84bc-8bf4-424e-b3b9-20152843ca63",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2ed4a279-10fb-4f07-adf9-a2b842426bcd",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ButtonPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "da1fcb4f-92da-4ffa-875e-33792e761525",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ButtonPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
