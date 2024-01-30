@@ -1,25 +1,65 @@
 {
-    "name": "Player Input Actions",
+    "name": "PlayerInputActions",
     "maps": [
         {
-            "name": "Navigate Default UI",
+            "name": "NavigateDefaultUI",
             "id": "d51ea264-0db1-452f-bbc7-b359fcb85727",
             "actions": [
                 {
                     "name": "ButtonPress",
                     "type": "PassThrough",
                     "id": "15af84bc-8bf4-424e-b3b9-20152843ca63",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PressPosition",
+                    "type": "Value",
+                    "id": "bb5af798-d0ad-4149-9a9d-2d0dbba779ea",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "PrimaryPress",
+                    "type": "Button",
+                    "id": "a3a2b6e4-67d2-431b-bbea-3e1dc7048303",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
                     "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
                     "name": "",
-                    "id": "2ed4a279-10fb-4f07-adf9-a2b842426bcd",
-                    "path": "<Mouse>/leftButton",
+                    "id": "f82d9c14-e716-4776-a84c-ce6e1d771f5c",
+                    "path": "<Mouse>/position",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f4f7b364-3f86-4723-b77a-29adb92e2285",
+                    "path": "<Touchscreen>/primaryTouch/position",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "da1fcb4f-92da-4ffa-875e-33792e761525",
+                    "path": "<Touchscreen>/primaryTouch/tap",
                     "interactions": "Press(behavior=1)",
                     "processors": "",
                     "groups": "",
@@ -29,8 +69,120 @@
                 },
                 {
                     "name": "",
-                    "id": "da1fcb4f-92da-4ffa-875e-33792e761525",
+                    "id": "2ed4a279-10fb-4f07-adf9-a2b842426bcd",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "65d4e7f6-ecb3-4c3d-b941-598bfcb0388e",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "NavigateDefaultUI1",
+            "id": "b527d86d-2937-4d7e-a4d3-9705935e8ace",
+            "actions": [
+                {
+                    "name": "ButtonPress",
+                    "type": "PassThrough",
+                    "id": "2bd38d62-51f5-4658-b5a8-76a0c1c492de",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PressPosition",
+                    "type": "Value",
+                    "id": "bd0d7130-ccd4-4522-8213-9f98281dcc98",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "PrimaryPress",
+                    "type": "PassThrough",
+                    "id": "9f24c678-abfc-4050-ab86-d03a909dca30",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "34bcd68b-5f5f-4ca7-a80b-d9efbd7ec761",
+                    "path": "<Mouse>/position",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "84c0919f-3288-47c0-be94-3f78396e316d",
+                    "path": "<Touchscreen>/primaryTouch/position",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3097c826-483c-45c7-85de-bc29670fd25c",
                     "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ButtonPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c56f4858-a6e9-4d0a-a922-c37653bd2f15",
+                    "path": "<Touchscreen>/primaryTouch/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2bb4d173-7f1b-453b-b17e-ee8d5e646cfc",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a150b6ff-fada-4b58-ba04-ab34e58d29c7",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "Press(behavior=1)",
                     "processors": "",
                     "groups": "",
