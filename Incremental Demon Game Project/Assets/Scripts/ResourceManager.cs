@@ -19,6 +19,16 @@ public class ResourceManager : MonoBehaviour
     public static event Action<float> onIncrementIntel;
     public static event Action<float> onIncrementReach;
 
+    public void OnEnable()
+    {
+        Action1Manager.OnAllCandlesLit += IncrementDarkness;
+    }
+
+    public void OnDisable()
+    {
+        Action1Manager.OnAllCandlesLit -= IncrementDarkness;
+    }
+
     public void IncrementDarkness(float changeAmount)
     {
         darkness += changeAmount;

@@ -7,6 +7,13 @@ public class FollowTouch : MonoBehaviour
 {
     private Vector2 pressPos;
     private bool isPressing;
+    private TrailRenderer trail;
+
+    private void Awake()
+    {
+        trail = GetComponent<TrailRenderer>();
+        trail.enabled = false;
+    }
 
     private void OnEnable()
     {
@@ -20,7 +27,6 @@ public class FollowTouch : MonoBehaviour
         InputManager.OnStartPrimaryPress -= StartFollowing;
         InputManager.OnUpdatePressPos -= UpdatePressPos;
         InputManager.OnEndPrimaryPress -= StopFollowing;
-
     }
 
     private void StartFollowing(Vector2 pos, float time)
@@ -34,12 +40,18 @@ public class FollowTouch : MonoBehaviour
     private void UpdatePressPos(Vector2 pos)
     {
         pressPos = pos;
+        if (trail.enabled == false)
+        {
+            transform.position = pressPos;
+            trail.enabled = true;
+        }
     }
 
     private void StopFollowing(Vector2 pos, float time)
     {
         isPressing = false;
         StopCoroutine(FollowPressPos());
+        trail.enabled = false;
     }
 
     private IEnumerator FollowPressPos()
