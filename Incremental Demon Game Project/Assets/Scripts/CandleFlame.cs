@@ -15,7 +15,9 @@ public class CandleFlame : MonoBehaviour
     private CapsuleCollider2D capsule;
     private float dwindleTime;
     private Color faintPurple;
+    [SerializeField]
     private Vector3 originalPosition;
+    [SerializeField]
     private Vector3 lowerPosition;
     private Vector3 originalScale;
     public static event Action<Vector2> OnCandleLit;
@@ -30,7 +32,7 @@ public class CandleFlame : MonoBehaviour
         capsule.enabled = true;
         isLit = false;
         originalPosition = transform.position;
-        lowerPosition = new Vector3(originalPosition.x, originalPosition.y - 0.56f, originalPosition.z);
+        lowerPosition = new Vector3(originalPosition.x, originalPosition.y - 0.36f, originalPosition.z);
         originalScale = new Vector3(1.5f, 1.5f, 2f);
         faintPurple = new Color(0.4f, 0, 0.5f, 0.2f);
     }
@@ -49,7 +51,6 @@ public class CandleFlame : MonoBehaviour
     {
         if (isLit == false && collision.gameObject.tag == "Player" )
         {
-            transform.position = originalPosition;
             sr.enabled = true;
             anim.enabled = true;
             sr.color = Color.white;
@@ -81,6 +82,7 @@ public class CandleFlame : MonoBehaviour
                 anim.enabled = false;
                 capsule.enabled = true;
                 transform.localScale = originalScale;
+                transform.position = originalPosition;
             }
             yield return null;
         }
