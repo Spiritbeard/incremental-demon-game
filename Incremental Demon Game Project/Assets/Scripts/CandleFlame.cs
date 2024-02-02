@@ -63,7 +63,7 @@ public class CandleFlame : MonoBehaviour
     private void GoOut(float darknessGain)
     {
         isLit = false;
-        dwindleTime = Random.Range(0.25f, 0.5f);
+        dwindleTime = 0.35f;
         StartCoroutine("DwindleFlame");
     }
 

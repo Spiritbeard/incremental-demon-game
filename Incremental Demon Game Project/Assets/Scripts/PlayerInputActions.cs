@@ -28,15 +28,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             ""id"": ""d51ea264-0db1-452f-bbc7-b359fcb85727"",
             ""actions"": [
                 {
-                    ""name"": ""ButtonPress"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""15af84bc-8bf4-424e-b3b9-20152843ca63"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press"",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""PressPosition"",
                     ""type"": ""Value"",
                     ""id"": ""bb5af798-d0ad-4149-9a9d-2d0dbba779ea"",
@@ -80,17 +71,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""da1fcb4f-92da-4ffa-875e-33792e761525"",
-                    ""path"": ""<Touchscreen>/primaryTouch/tap"",
-                    ""interactions"": ""Press(behavior=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""ButtonPress"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""2ed4a279-10fb-4f07-adf9-a2b842426bcd"",
                     ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": ""Press(behavior=1)"",
@@ -103,112 +83,11 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""65d4e7f6-ecb3-4c3d-b941-598bfcb0388e"",
-                    ""path"": ""<Touchscreen>/Press"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PrimaryPress"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""NavigateDefaultUI1"",
-            ""id"": ""b527d86d-2937-4d7e-a4d3-9705935e8ace"",
-            ""actions"": [
-                {
-                    ""name"": ""ButtonPress"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""2bd38d62-51f5-4658-b5a8-76a0c1c492de"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press"",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""PressPosition"",
-                    ""type"": ""Value"",
-                    ""id"": ""bd0d7130-ccd4-4522-8213-9f98281dcc98"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""PrimaryPress"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""9f24c678-abfc-4050-ab86-d03a909dca30"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press"",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""34bcd68b-5f5f-4ca7-a80b-d9efbd7ec761"",
-                    ""path"": ""<Mouse>/position"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PressPosition"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""84c0919f-3288-47c0-be94-3f78396e316d"",
-                    ""path"": ""<Touchscreen>/primaryTouch/position"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PressPosition"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""3097c826-483c-45c7-85de-bc29670fd25c"",
-                    ""path"": ""<Touchscreen>/primaryTouch/tap"",
-                    ""interactions"": ""Press(behavior=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""ButtonPress"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c56f4858-a6e9-4d0a-a922-c37653bd2f15"",
                     ""path"": ""<Touchscreen>/primaryTouch/press"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""PrimaryPress"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""2bb4d173-7f1b-453b-b17e-ee8d5e646cfc"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": ""Press(behavior=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PrimaryPress"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a150b6ff-fada-4b58-ba04-ab34e58d29c7"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": ""Press(behavior=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""ButtonPress"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -219,14 +98,8 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
 }");
         // NavigateDefaultUI
         m_NavigateDefaultUI = asset.FindActionMap("NavigateDefaultUI", throwIfNotFound: true);
-        m_NavigateDefaultUI_ButtonPress = m_NavigateDefaultUI.FindAction("ButtonPress", throwIfNotFound: true);
         m_NavigateDefaultUI_PressPosition = m_NavigateDefaultUI.FindAction("PressPosition", throwIfNotFound: true);
         m_NavigateDefaultUI_PrimaryPress = m_NavigateDefaultUI.FindAction("PrimaryPress", throwIfNotFound: true);
-        // NavigateDefaultUI1
-        m_NavigateDefaultUI1 = asset.FindActionMap("NavigateDefaultUI1", throwIfNotFound: true);
-        m_NavigateDefaultUI1_ButtonPress = m_NavigateDefaultUI1.FindAction("ButtonPress", throwIfNotFound: true);
-        m_NavigateDefaultUI1_PressPosition = m_NavigateDefaultUI1.FindAction("PressPosition", throwIfNotFound: true);
-        m_NavigateDefaultUI1_PrimaryPress = m_NavigateDefaultUI1.FindAction("PrimaryPress", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -288,14 +161,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     // NavigateDefaultUI
     private readonly InputActionMap m_NavigateDefaultUI;
     private List<INavigateDefaultUIActions> m_NavigateDefaultUIActionsCallbackInterfaces = new List<INavigateDefaultUIActions>();
-    private readonly InputAction m_NavigateDefaultUI_ButtonPress;
     private readonly InputAction m_NavigateDefaultUI_PressPosition;
     private readonly InputAction m_NavigateDefaultUI_PrimaryPress;
     public struct NavigateDefaultUIActions
     {
         private @PlayerInputActions m_Wrapper;
         public NavigateDefaultUIActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @ButtonPress => m_Wrapper.m_NavigateDefaultUI_ButtonPress;
         public InputAction @PressPosition => m_Wrapper.m_NavigateDefaultUI_PressPosition;
         public InputAction @PrimaryPress => m_Wrapper.m_NavigateDefaultUI_PrimaryPress;
         public InputActionMap Get() { return m_Wrapper.m_NavigateDefaultUI; }
@@ -307,9 +178,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_NavigateDefaultUIActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_NavigateDefaultUIActionsCallbackInterfaces.Add(instance);
-            @ButtonPress.started += instance.OnButtonPress;
-            @ButtonPress.performed += instance.OnButtonPress;
-            @ButtonPress.canceled += instance.OnButtonPress;
             @PressPosition.started += instance.OnPressPosition;
             @PressPosition.performed += instance.OnPressPosition;
             @PressPosition.canceled += instance.OnPressPosition;
@@ -320,9 +188,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
 
         private void UnregisterCallbacks(INavigateDefaultUIActions instance)
         {
-            @ButtonPress.started -= instance.OnButtonPress;
-            @ButtonPress.performed -= instance.OnButtonPress;
-            @ButtonPress.canceled -= instance.OnButtonPress;
             @PressPosition.started -= instance.OnPressPosition;
             @PressPosition.performed -= instance.OnPressPosition;
             @PressPosition.canceled -= instance.OnPressPosition;
@@ -346,77 +211,8 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         }
     }
     public NavigateDefaultUIActions @NavigateDefaultUI => new NavigateDefaultUIActions(this);
-
-    // NavigateDefaultUI1
-    private readonly InputActionMap m_NavigateDefaultUI1;
-    private List<INavigateDefaultUI1Actions> m_NavigateDefaultUI1ActionsCallbackInterfaces = new List<INavigateDefaultUI1Actions>();
-    private readonly InputAction m_NavigateDefaultUI1_ButtonPress;
-    private readonly InputAction m_NavigateDefaultUI1_PressPosition;
-    private readonly InputAction m_NavigateDefaultUI1_PrimaryPress;
-    public struct NavigateDefaultUI1Actions
-    {
-        private @PlayerInputActions m_Wrapper;
-        public NavigateDefaultUI1Actions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @ButtonPress => m_Wrapper.m_NavigateDefaultUI1_ButtonPress;
-        public InputAction @PressPosition => m_Wrapper.m_NavigateDefaultUI1_PressPosition;
-        public InputAction @PrimaryPress => m_Wrapper.m_NavigateDefaultUI1_PrimaryPress;
-        public InputActionMap Get() { return m_Wrapper.m_NavigateDefaultUI1; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(NavigateDefaultUI1Actions set) { return set.Get(); }
-        public void AddCallbacks(INavigateDefaultUI1Actions instance)
-        {
-            if (instance == null || m_Wrapper.m_NavigateDefaultUI1ActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_NavigateDefaultUI1ActionsCallbackInterfaces.Add(instance);
-            @ButtonPress.started += instance.OnButtonPress;
-            @ButtonPress.performed += instance.OnButtonPress;
-            @ButtonPress.canceled += instance.OnButtonPress;
-            @PressPosition.started += instance.OnPressPosition;
-            @PressPosition.performed += instance.OnPressPosition;
-            @PressPosition.canceled += instance.OnPressPosition;
-            @PrimaryPress.started += instance.OnPrimaryPress;
-            @PrimaryPress.performed += instance.OnPrimaryPress;
-            @PrimaryPress.canceled += instance.OnPrimaryPress;
-        }
-
-        private void UnregisterCallbacks(INavigateDefaultUI1Actions instance)
-        {
-            @ButtonPress.started -= instance.OnButtonPress;
-            @ButtonPress.performed -= instance.OnButtonPress;
-            @ButtonPress.canceled -= instance.OnButtonPress;
-            @PressPosition.started -= instance.OnPressPosition;
-            @PressPosition.performed -= instance.OnPressPosition;
-            @PressPosition.canceled -= instance.OnPressPosition;
-            @PrimaryPress.started -= instance.OnPrimaryPress;
-            @PrimaryPress.performed -= instance.OnPrimaryPress;
-            @PrimaryPress.canceled -= instance.OnPrimaryPress;
-        }
-
-        public void RemoveCallbacks(INavigateDefaultUI1Actions instance)
-        {
-            if (m_Wrapper.m_NavigateDefaultUI1ActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(INavigateDefaultUI1Actions instance)
-        {
-            foreach (var item in m_Wrapper.m_NavigateDefaultUI1ActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_NavigateDefaultUI1ActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public NavigateDefaultUI1Actions @NavigateDefaultUI1 => new NavigateDefaultUI1Actions(this);
     public interface INavigateDefaultUIActions
     {
-        void OnButtonPress(InputAction.CallbackContext context);
-        void OnPressPosition(InputAction.CallbackContext context);
-        void OnPrimaryPress(InputAction.CallbackContext context);
-    }
-    public interface INavigateDefaultUI1Actions
-    {
-        void OnButtonPress(InputAction.CallbackContext context);
         void OnPressPosition(InputAction.CallbackContext context);
         void OnPrimaryPress(InputAction.CallbackContext context);
     }
