@@ -1,18 +1,14 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ResourceManager : MonoBehaviour
+[DefaultExecutionOrder(1)]
+[CreateAssetMenu(fileName = "ResourceManager", menuName = "ScriptableObjects/ResourceManager")]
+public class ResourceManagerScriptableObject : ScriptableObject
 {
-    [SerializeField]
-    private float darkness;
-    [SerializeField]
-    private float spoils;
-    [SerializeField]
-    private float intel;
-    [SerializeField]
-    private float reach;
+    public float darkness;
+    public float spoils;
+    public float intel;
+    public float reach;
 
     public static event Action<float> onIncrementDarkness;
     public static event Action<float> onIncrementSpoils;
