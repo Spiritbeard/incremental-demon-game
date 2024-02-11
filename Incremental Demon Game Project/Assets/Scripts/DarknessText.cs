@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.iOS;
 using UnityEngine;
 
 public class DarknessText : MonoBehaviour
@@ -9,20 +10,23 @@ public class DarknessText : MonoBehaviour
     private float darkness;
     private float previousDarkness;
     private TextMeshProUGUI darknessText;
+    public ResourceManagerScriptableObject resourceManager;
 
     void Start()
     {
         darknessText = GetComponent<TextMeshProUGUI>();
+        darkness = resourceManager.darkness;
+        darknessText.text = darkness.ToString();
     }
 
     private void OnEnable()
     {
-        ResourceManager.onIncrementDarkness += DisplayNewDarkness;
+        ResourceManagerScriptableObject.onIncrementDarkness += DisplayNewDarkness;
     }
 
     private void OnDisable()
     {
-        ResourceManager.onIncrementDarkness -= DisplayNewDarkness;
+        ResourceManagerScriptableObject.onIncrementDarkness -= DisplayNewDarkness;
     }
 
     private void DisplayNewDarkness(float value)

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI String Table Collection_ja
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ja
+  m_SharedData: {fileID: 11400000, guid: 4cdf9659779881e4eb1faf864c44694c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 19853651230722
+    m_Localized: "\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9\uFF1A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19853651230721
+    m_Localized: "\u66C7\u308A\u30D3\u30B8\u30CD\u30B9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19853651230720
+    m_Localized: "\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9\uFF1A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19853647036416
+    m_Localized: "\u95C7\u3092\u5F15\u304D\u4ED8\u3051\u307E\u3059"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
