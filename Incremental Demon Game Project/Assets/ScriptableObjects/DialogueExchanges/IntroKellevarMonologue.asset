@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: IntroKellevarMonologue
   m_EditorClassIdentifier: 
   lines:
-  - speakerName: Kellevar
-    speakerAnimation: {fileID: 7400000, guid: e568a083af58cb04d8fddfdd32618d6c, type: 2}
+  - speakerName: Kellavar
+    speakerAnimation: {fileID: 7400000, guid: 41dd7275b5d79514d94824b16f9cbb8d, type: 2}
     lineText:
       m_TableReference:
         m_TableCollectionName: GUID:4cdf9659779881e4eb1faf864c44694c
@@ -25,8 +25,8 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
     speakerFacing: 0
-  - speakerName: Kellevar
-    speakerAnimation: {fileID: 7400000, guid: e568a083af58cb04d8fddfdd32618d6c, type: 2}
+  - speakerName: Candle
+    speakerAnimation: {fileID: 7400000, guid: 13098d82d0133814a9dc6d8ab44530b1, type: 2}
     lineText:
       m_TableReference:
         m_TableCollectionName: GUID:4cdf9659779881e4eb1faf864c44694c
@@ -37,8 +37,8 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
     speakerFacing: 0
-  - speakerName: Kellevar
-    speakerAnimation: {fileID: 7400000, guid: 289dbb1a76cad8c459498675db032788, type: 2}
+  - speakerName: Book
+    speakerAnimation: {fileID: 7400000, guid: b350b2334e3b7d64aa19362892d2092c, type: 2}
     lineText:
       m_TableReference:
         m_TableCollectionName: GUID:4cdf9659779881e4eb1faf864c44694c

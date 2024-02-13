@@ -74,7 +74,7 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = autoTagSystem.SetAutoTags(currentLine.lineText.GetLocalizedString());
         if (currentLine.speakerAnimation != previousAnimation)
         {
-            speakerAnimator.Play(currentLine.speakerAnimation.name);
+            speakerAnimator.SetTrigger(currentLine.speakerAnimation.name.ToString()+"Trigger");
             previousAnimation = currentLine.speakerAnimation;
         }
 
