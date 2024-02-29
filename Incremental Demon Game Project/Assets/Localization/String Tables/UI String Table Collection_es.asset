@@ -34,6 +34,19 @@ MonoBehaviour:
     m_Localized: Atraer la oscuridad
     m_Metadata:
       m_Items: []
+  - m_Id: 6895542304260096
+    m_Localized: Debo reponer mis poderes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6895542337814528
+    m_Localized: 'Solo hay una fuente lo suficientemente fuerte: una oscuridad tan
+      profunda, tan pura. . .'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6895542342008832
+    m_Localized: "\xBFUsted llam\xF3?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

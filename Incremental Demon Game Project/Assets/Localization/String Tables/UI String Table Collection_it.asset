@@ -34,6 +34,19 @@ MonoBehaviour:
     m_Localized: "Attirare l'oscurit\xE0"
     m_Metadata:
       m_Items: []
+  - m_Id: 6895542304260096
+    m_Localized: Devo reintegrare i miei poteri.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6895542337814528
+    m_Localized: "C'\xE8 solo una fonte abbastanza forte: un'oscurit\xE0 cos\xEC
+      profonda, cos\xEC pura. . ."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6895542342008832
+    m_Localized: Hai chiamato?
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

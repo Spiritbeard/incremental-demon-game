@@ -50,8 +50,8 @@ MonoBehaviour:
         - rid: 7632558162191581199
         - rid: 7632558162191581200
         - rid: 7632558162191581201
-        m_ConnectedFile: Assets/Localization/CSVs/UI String Table Collection Spreadsheet
-          - Sheet1.csv
+        m_ConnectedFile: C:/Users/mckay/Downloads/UI String Table Collection Spreadsheet
+          - Sheet1 (1).csv
     - rid: 7632558162191581189
       type: {class: KeyIdColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
       data:

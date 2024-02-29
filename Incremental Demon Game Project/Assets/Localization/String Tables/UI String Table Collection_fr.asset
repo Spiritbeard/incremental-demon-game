@@ -34,6 +34,19 @@ MonoBehaviour:
     m_Localized: "Attirer l'obscurit\xE9"
     m_Metadata:
       m_Items: []
+  - m_Id: 6895542304260096
+    m_Localized: Je dois reconstituer mes pouvoirs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6895542337814528
+    m_Localized: "Il n'y a qu'une seule source assez forte - une obscurit\xE9 si
+      profonde, si pure. . ."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6895542342008832
+    m_Localized: "Vous avez appel\xE9?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

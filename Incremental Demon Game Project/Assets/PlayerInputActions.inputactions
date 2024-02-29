@@ -16,11 +16,11 @@
                 },
                 {
                     "name": "PrimaryPress",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "a3a2b6e4-67d2-431b-bbea-3e1dc7048303",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press",
+                    "interactions": "Press(behavior=2)",
                     "initialStateCheck": false
                 }
             ],
@@ -51,7 +51,7 @@
                     "name": "",
                     "id": "2ed4a279-10fb-4f07-adf9-a2b842426bcd",
                     "path": "<Mouse>/leftButton",
-                    "interactions": "Press(behavior=1)",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "PrimaryPress",
@@ -62,7 +62,7 @@
                     "name": "",
                     "id": "65d4e7f6-ecb3-4c3d-b941-598bfcb0388e",
                     "path": "<Touchscreen>/primaryTouch/press",
-                    "interactions": "Press",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "PrimaryPress",

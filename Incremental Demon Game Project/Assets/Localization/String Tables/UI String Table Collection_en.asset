@@ -34,6 +34,19 @@ MonoBehaviour:
     m_Localized: Draw Darkness
     m_Metadata:
       m_Items: []
+  - m_Id: 6895542304260096
+    m_Localized: I must replenish my powers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6895542337814528
+    m_Localized: "There is only one source strong enough\u2014a Darkness so deep,
+      so pure . . ."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6895542342008832
+    m_Localized: You called?
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

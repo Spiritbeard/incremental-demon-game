@@ -31,7 +31,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19853647036416
-    m_Localized: "Przyci\u0105gnij ciemno\u015B\u0107"
+    m_Localized: "Przyci\u0105gn\u0105\u0107 ciemno\u015B\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6895542304260096
+    m_Localized: "Musz\u0119 uzupe\u0142ni\u0107 swoje moce."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6895542337814528
+    m_Localized: "Jest tylko jedno \u017Ar\xF3d\u0142o silne - ciemno\u015B\u0107
+      tak g\u0142\u0119boka, taka czysta. . ."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6895542342008832
+    m_Localized: "Nazwa\u0142e\u015B?"
     m_Metadata:
       m_Items: []
   references:

@@ -23,7 +23,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19853651230721
-    m_Localized: "Bew\xF6lktes Gesch\xE4ft"
+    m_Localized: "Tr\xFCbes Gesch\xE4ft"
     m_Metadata:
       m_Items: []
   - m_Id: 19853651230720
@@ -32,6 +32,19 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 19853647036416
     m_Localized: Die Dunkelheit anziehen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6895542304260096
+    m_Localized: "Ich muss meine Kr\xE4fte wieder auff\xFCllen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6895542337814528
+    m_Localized: Es gibt nur eine Quelle, die stark genug ist - eine Dunkelheit,
+      die so tief, so rein ist. . .
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6895542342008832
+    m_Localized: Du hast angerufen?
     m_Metadata:
       m_Items: []
   references:

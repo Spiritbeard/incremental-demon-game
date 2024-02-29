@@ -34,6 +34,19 @@ MonoBehaviour:
     m_Localized: Trek de duisternis aan
     m_Metadata:
       m_Items: []
+  - m_Id: 6895542304260096
+    m_Localized: Ik moet mijn krachten aanvullen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6895542337814528
+    m_Localized: "Er is maar \xE9\xE9n bron sterk genoeg - een duisternis zo diep,
+      zo puur. . ."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6895542342008832
+    m_Localized: Heb je gebeld?
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

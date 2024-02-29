@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     private AutoTagSystem autoTagSystem;
     private Animator speakerAnimator;
     private AnimationClip previousAnimation;
+    private DialogueExchangeScriptableObject.Facing previousFacing;
     private Queue<DialogueExchangeScriptableObject.Line> dialogueLines = new Queue<DialogueExchangeScriptableObject.Line>();
     public int currentLineIndex;
     private DialogueExchangeScriptableObject.Line currentLine;
@@ -23,16 +24,20 @@ public class DialogueManager : MonoBehaviour
     {
         speakerAnimator = GetComponentInChildren<Animator>();
         autoTagSystem = GameObject.FindGameObjectWithTag("AutoTagSystem").GetComponent<AutoTagSystem>();
+        previousFacing = DialogueExchangeScriptableObject.Facing.OnRight;
     }
 
     private void OnEnable()
     {
+        //this will all move to wherever a new DialogueExchange is loaded in
         for (int i = 0; i < currentDialogueExchange.lines.Length; i++)
         {
             dialogueLines.Enqueue(currentDialogueExchange.lines[i]);
         }
-        InputManager.OnEndPrimaryPress += ProgressDialogue;
         DisplayNextLine(currentDialogueExchange);
+        //
+        
+        InputManager.OnEndPrimaryPress += ProgressDialogue;
     }
 
     private void OnDisable()
@@ -60,7 +65,7 @@ public class DialogueManager : MonoBehaviour
         {
             if (!isExchangeOver)
             {
-                
+                ResetAnimatorPosition();
             }
             else
             {
@@ -78,6 +83,18 @@ public class DialogueManager : MonoBehaviour
             previousAnimation = currentLine.speakerAnimation;
         }
 
+        if (currentLine.speakerFacing == DialogueExchangeScriptableObject.Facing.OnLeft && previousFacing != DialogueExchangeScriptableObject.Facing.OnLeft)
+        {
+            previousFacing = DialogueExchangeScriptableObject.Facing.OnLeft;
+            speakerAnimator.gameObject.transform.localPosition = new Vector2(speakerAnimator.gameObject.transform.localPosition.x - 400f, speakerAnimator.gameObject.transform.localPosition.y);
+        }
+
+        if (currentLine.speakerFacing == DialogueExchangeScriptableObject.Facing.OnRight && previousFacing != DialogueExchangeScriptableObject.Facing.OnRight)
+        {
+            previousFacing = DialogueExchangeScriptableObject.Facing.OnRight;
+            speakerAnimator.gameObject.transform.localPosition = new Vector2(speakerAnimator.gameObject.transform.localPosition.x + 400f, speakerAnimator.gameObject.transform.localPosition.y);
+        }
+
         if (dialogueLines.Count == 0)
         {
             isExchangeOver = true;
@@ -93,6 +110,15 @@ public class DialogueManager : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+    }
+
+    private void ResetAnimatorPosition()
+    {
+        if (previousFacing == DialogueExchangeScriptableObject.Facing.OnLeft)
+        {
+            speakerAnimator.gameObject.transform.localPosition = new Vector2(speakerAnimator.gameObject.transform.localPosition.x + 400, speakerAnimator.gameObject.transform.localPosition.y);
+        }
+        previousFacing = DialogueExchangeScriptableObject.Facing.OnRight;
     }
 
 }
