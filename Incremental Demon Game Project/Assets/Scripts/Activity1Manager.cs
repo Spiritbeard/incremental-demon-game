@@ -5,6 +5,7 @@ using System;
 
 public class Activity1Manager : MonoBehaviour
 {
+    [SerializeField]
     private int litCandles;
     private int action1DarknessGain;
     public static event Action<float> OnAllCandlesLit;
@@ -18,6 +19,12 @@ public class Activity1Manager : MonoBehaviour
     private void OnEnable()
     {
         CandleFlame.OnCandleLit += IncrementCandleCount;
+    }
+
+        private void OnDisable()
+    {
+        litCandles = 0;
+        CandleFlame.OnCandleLit -= IncrementCandleCount;
     }
 
     private void IncrementCandleCount(Vector2 pos)

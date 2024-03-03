@@ -25,15 +25,11 @@ public class CandleFlame : MonoBehaviour
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        sr.enabled = false;
         anim = GetComponent<Animator>();
-        anim.enabled = false;
         capsule = GetComponent<CapsuleCollider2D>();
-        capsule.enabled = true;
-        light2D = GetComponent<Light2D>();
-        light2D.enabled = false;
-        isLit = false;
+        light2D = GetComponent<Light2D>();        
         originalPosition = transform.position;
+        ResetCandle();
         lowerPosition = new Vector3(originalPosition.x, originalPosition.y - 0.36f, originalPosition.z);
         originalScale = new Vector3(1.5f, 1.5f, 2f);
         faintPurple = new Color(0.4f, 0, 0.5f, 0.2f);
@@ -41,6 +37,7 @@ public class CandleFlame : MonoBehaviour
 
     private void OnEnable()
     {
+        ResetCandle();
         Activity1Manager.OnAllCandlesLit += GoOut;
     }
 
@@ -97,15 +94,19 @@ public class CandleFlame : MonoBehaviour
             time += Time.deltaTime;
             if (time >= dwindleTime)
             {
-                sr.enabled = false;
-                anim.enabled = false;
-                light2D.enabled = false;   
-                capsule.enabled = true;
-                transform.localScale = originalScale;
-                transform.position = originalPosition;
+                ResetCandle();
             }
             yield return null;
         }
     }
 
+    private void ResetCandle()
+    {
+        sr.enabled = false;
+        anim.enabled = false;
+        light2D.enabled = false;   
+        capsule.enabled = true;
+        transform.localScale = originalScale;
+        transform.position = originalPosition;
+    }
 }
