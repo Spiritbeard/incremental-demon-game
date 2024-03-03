@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c71bca7a11a733499463dc5f22e134c, type: 3}
+  m_Name: 001_OpeningScene
+  m_EditorClassIdentifier: 
+  lines:
+  - speakerName: Kellavar
+    speakerAnimation: {fileID: 7400000, guid: e562c794fabe3c445bb2c1d82934182c, type: 2}
+    lineText:
+      m_TableReference:
+        m_TableCollectionName: GUID:0ade7624439e3ae4b856232b1b9ae35d
+      m_TableEntryReference:
+        m_KeyId: 15562896388096
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerFacing: 1
+  - speakerName: Kellavar
+    speakerAnimation: {fileID: 7400000, guid: e562c794fabe3c445bb2c1d82934182c, type: 2}
+    lineText:
+      m_TableReference:
+        m_TableCollectionName: GUID:0ade7624439e3ae4b856232b1b9ae35d
+      m_TableEntryReference:
+        m_KeyId: 15562925748224
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerFacing: 1
+  - speakerName: Kellavar
+    speakerAnimation: {fileID: 7400000, guid: 36315256fee11f340afe76dfe71114e8, type: 2}
+    lineText:
+      m_TableReference:
+        m_TableCollectionName: GUID:0ade7624439e3ae4b856232b1b9ae35d
+      m_TableEntryReference:
+        m_KeyId: 15562925748225
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerFacing: 1
+  - speakerName: Kellavar
+    speakerAnimation: {fileID: 7400000, guid: 5c08d4b2c36b925438ebe9b6c3cff4d8, type: 2}
+    lineText:
+      m_TableReference:
+        m_TableCollectionName: GUID:0ade7624439e3ae4b856232b1b9ae35d
+      m_TableEntryReference:
+        m_KeyId: 15562925748226
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerFacing: 1
+  - speakerName: Kellavar
+    speakerAnimation: {fileID: 7400000, guid: e562c794fabe3c445bb2c1d82934182c, type: 2}
+    lineText:
+      m_TableReference:
+        m_TableCollectionName: GUID:0ade7624439e3ae4b856232b1b9ae35d
+      m_TableEntryReference:
+        m_KeyId: 15562925748227
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerFacing: 1
+  - speakerName: Kellavar
+    speakerAnimation: {fileID: 7400000, guid: e562c794fabe3c445bb2c1d82934182c, type: 2}
+    lineText:
+      m_TableReference:
+        m_TableCollectionName: GUID:0ade7624439e3ae4b856232b1b9ae35d
+      m_TableEntryReference:
+        m_KeyId: 15562925748228
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerFacing: 1
+  references:
+    version: 2
+    RefIds: []

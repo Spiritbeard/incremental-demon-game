@@ -1058,7 +1058,7 @@ MonoBehaviour:
         m_MethodName: StartDialogue
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: d165c8a161b43da4c9a4db85495da3eb, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: b0bdca44126a9a54faeb4cfadfa53e12, type: 2}
           m_ObjectArgumentAssemblyTypeName: DialogueExchangeScriptableObject, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0

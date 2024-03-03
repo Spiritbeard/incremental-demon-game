@@ -23,6 +23,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-ru
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9554fc09816f98d49ad8d088d95e4c42
+    m_Address: DialogueStringTableCollection_ru
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: dda2debf9f5e9ee4e98c1f269c0c5de9, type: 2}
   m_SchemaSet:
