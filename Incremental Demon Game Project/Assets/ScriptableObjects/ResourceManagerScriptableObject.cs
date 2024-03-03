@@ -17,12 +17,12 @@ public class ResourceManagerScriptableObject : ScriptableObject
 
     public void OnEnable()
     {
-        Action1Manager.OnAllCandlesLit += IncrementDarkness;
+        Activity1Manager.OnAllCandlesLit += IncrementDarkness;
     }
 
     public void OnDisable()
     {
-        Action1Manager.OnAllCandlesLit -= IncrementDarkness;
+        Activity1Manager.OnAllCandlesLit -= IncrementDarkness;
     }
 
     public void IncrementDarkness(float changeAmount)

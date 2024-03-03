@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - AutoTagSystem
+  - ActivitiesManager
+  - DialogueManager
   layers:
   - Default
   - TransparentFX

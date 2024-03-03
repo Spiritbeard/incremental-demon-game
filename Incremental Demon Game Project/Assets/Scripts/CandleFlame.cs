@@ -41,12 +41,12 @@ public class CandleFlame : MonoBehaviour
 
     private void OnEnable()
     {
-        Action1Manager.OnAllCandlesLit += GoOut;
+        Activity1Manager.OnAllCandlesLit += GoOut;
     }
 
     private void OnDisable()
     {
-        Action1Manager.OnAllCandlesLit -= GoOut;
+        Activity1Manager.OnAllCandlesLit -= GoOut;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -32,12 +32,12 @@ public class RitualCircle : MonoBehaviour
     
     private void OnEnable()
     {
-        Action1Manager.OnAllCandlesLit += StartColorOverTime;
+        Activity1Manager.OnAllCandlesLit += StartColorOverTime;
     }
 
     private void OnDisable()
     {
-        Action1Manager.OnAllCandlesLit -= StartColorOverTime;
+        Activity1Manager.OnAllCandlesLit -= StartColorOverTime;
     }
 
     private void StartColorOverTime(float darknessGain)

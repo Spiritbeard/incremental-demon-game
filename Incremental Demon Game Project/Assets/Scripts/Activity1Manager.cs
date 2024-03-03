@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Action1Manager : MonoBehaviour
+public class Activity1Manager : MonoBehaviour
 {
     private int litCandles;
     private int action1DarknessGain;
