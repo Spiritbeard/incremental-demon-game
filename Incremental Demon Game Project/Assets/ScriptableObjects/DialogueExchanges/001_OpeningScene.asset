@@ -50,7 +50,7 @@ MonoBehaviour:
       m_LocalVariables: []
     speakerFacing: 1
   - speakerName: Kellavar
-    speakerAnimation: {fileID: 7400000, guid: 5c08d4b2c36b925438ebe9b6c3cff4d8, type: 2}
+    speakerAnimation: {fileID: 7400000, guid: 76de942925aa63045ab2da8ddbeaf59d, type: 2}
     lineText:
       m_TableReference:
         m_TableCollectionName: GUID:0ade7624439e3ae4b856232b1b9ae35d
@@ -62,7 +62,7 @@ MonoBehaviour:
       m_LocalVariables: []
     speakerFacing: 1
   - speakerName: Kellavar
-    speakerAnimation: {fileID: 7400000, guid: e562c794fabe3c445bb2c1d82934182c, type: 2}
+    speakerAnimation: {fileID: 7400000, guid: 2dc7ace61bb6ee648bd7f4fcd503237b, type: 2}
     lineText:
       m_TableReference:
         m_TableCollectionName: GUID:0ade7624439e3ae4b856232b1b9ae35d
